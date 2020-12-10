@@ -71,12 +71,14 @@ npm run test
 
 ## Todos
 
-- [ ] 首屏渲染性能优化
+- [ ] 性能优化
   - [x] Element UI 按需加载(`chunk-vendors.js`从803KB降至321KB，目标244KB)
   - [x] 路由懒加载
-  - [ ] 使用 CDN 外部加载资源（今天尝试了一下，有两个问题：1、CDN可能会挂；2、开发和线上环境暂时无法完全分离配置，待继续研究）
-- [ ] 节流与防抖
-- [ ] HTTP缓存
+  - [ ] 节流与防抖
+  - [x] 页面缓存：  
+    gzip压缩文件（使用compression-webpack-plugin）、Nginx配置http缓存、文件名hash  
+    参考：[vue项目部署的最佳实践](juejin.im/post/5eb2243e51882555d8457833)
+
 - [ ] 单元测试
 - [ ] E2E测试
 - [ ] PWA
